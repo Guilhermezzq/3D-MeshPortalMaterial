@@ -11,11 +11,12 @@ blend: Controls the blending effect of the portal, smoothly transitioning betwee
 
 side: Defines the side of the material to be rendered, in this case, configured as THREE.BackSide to apply the texture on the internal side of the portal.
 
-2. User Interaction
+# User Interaction
 
 In addition to the portal effect, the scene also includes user interaction. Upon double-clicking on the portal, the activation state toggles, allowing the user to enter and exit the portal.
 
-4. Camera Control
+
+ # Camera Control
    
 Camera control is implemented using CameraControls from the @react-three/drei package. It allows the user to interact with the scene, moving and rotating the camera to explore different angles.
 
@@ -23,16 +24,21 @@ Running the Project Locally
 
 To run this project locally, follow these steps:
 
-Clone the repository:
+1. Clone the repository:
+ 
 bash
 Copy code
 git clone https://github.com/your-username/repository-name.git
-Install dependencies:
+
+2. Install dependencies:
+
 bash
 Copy code
 cd repository-name
 npm install
-Start the development server:
+
+3. Start the development server:
+   
 sql
 Copy code
 npm start
