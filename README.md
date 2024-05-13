@@ -1,70 +1,45 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Key Features
 
-## Available Scripts
+## 1. MeshPortalMaterial
 
-In the project directory, you can run:
+The MeshPortalMaterial is a core feature of this scene. It allows creating portal effects on 3D objects, offering the ability to view content inside them. In this project, the MeshPortalMaterial is applied to a RoundedBox, which serves as the portal. Upon double-clicking on this portal, the activation state toggles, enabling the user to "enter" the portal and view the internal content.
 
-### `npm start`
+# Key Properties Utilized:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+blend: Controls the blending effect of the portal, smoothly transitioning between activation and deactivation states.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+side: Defines the side of the material to be rendered, in this case, configured as THREE.BackSide to apply the texture on the internal side of the portal.
 
-### `npm test`
+2. User Interaction
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In addition to the portal effect, the scene also includes user interaction. Upon double-clicking on the portal, the activation state toggles, allowing the user to enter and exit the portal.
 
-### `npm run build`
+4. Camera Control
+   
+Camera control is implemented using CameraControls from the @react-three/drei package. It allows the user to interact with the scene, moving and rotating the camera to explore different angles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Running the Project Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/repository-name.git
+Install dependencies:
+bash
+Copy code
+cd repository-name
+npm install
+Start the development server:
+sql
+Copy code
+npm start
+The project will be available at http://localhost:3000.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Technologies Used
+React
+Three.js
+@react-three/drei
+easing (easing library for smooth animations)
